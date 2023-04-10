@@ -3,24 +3,18 @@
 import java.util.*;
 public class first{
     public static void main(String[] args) {
-        System.out.println("enter any number");
         Scanner sc = new Scanner(System.in);
-        int n=0,f=1,x = sc.nextInt();//4
-        int mr=x;//3
-            for(int i=1; i<x+1 ;i++){
-                while(f<mr){
-                    System.out.print(" ");
-                    f++;
-                    //
-                }while(n<i){
+        System.out.print("Enter the number of rows: ");
+        int n = sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
                 System.out.print("*");
-                n++;
-                //
-            }System.out.print("\n");
-            n=0;
-            f=1;
-            mr--;
+            }
+            System.out.print("\n");
         }
     }
 }
-//I try hard to solve this but I cannot :(
+
