@@ -20,8 +20,6 @@ public class first{
                 counter =1;
                 break;
             }counter++;
-            
-            
         }
     }
     }
